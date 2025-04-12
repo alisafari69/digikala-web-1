@@ -1,0 +1,31 @@
+.poster-part2,
+.poster-part3 {
+  width: 85%;
+  height: 263px;
+  margin: 50px auto 20px auto;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  > img {
+    width: 49.4%;
+    height: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+}
+.poster-part3 {
+  margin-top: 20px;
+}
+.poster-part-4 {
+  width: 85%;
+  height: 165px;
+  margin: 20px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

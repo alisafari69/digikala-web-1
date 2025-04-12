@@ -1,0 +1,197 @@
+.servises-digi {
+  width: 80%;
+  height: 150px;
+  margin: 0px auto;
+  ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    box-sizing: border-box;
+    position: unset;
+    li {
+      list-style: none;
+      margin-top: 25px;
+      display: flex;
+      flex-flow: column nowrap;
+      position: unset;
+      a,
+      .label-a {
+        text-decoration: none;
+        cursor: pointer;
+        position: unset;
+        img {
+          width: 55px;
+          height: 55px;
+        }
+        svg {
+          width: 32px;
+          height: 32px;
+          fill: #96959b;
+          background-color: #e2e2e2;
+          padding: 10px;
+          border-radius: 50%;
+          position: unset;
+        }
+        p {
+          font-family: iranyekan;
+          font-size: 11px;
+          color: black;
+          text-align: center;
+          padding-top: 5px;
+        }
+      }
+      &.sub-item {
+        position: unset;
+        #close-service,
+        #show-service {
+          display: none;
+        }
+        #show-service:checked ~ .sub-servise {
+          display: block;
+          position: fixed;
+          top: calc(50% - 40vw / 2);
+          left: calc(50% - 50vh / 2);
+        }
+        #close-service:checked ~ .sub-servise {
+          display: none;
+          transition: 1500ms;
+        }
+      }
+      .sub-servise {
+        width: 49vw;
+        height: 80vh;
+        background-color: white;
+        border-radius: 10px;
+        border: 1px solid #e2e2e2;
+        z-index: 5;
+        position: absolute;
+        right: calc(50% - 49vw / 2);
+        top: calc(50% - 2vh / 2);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: start;
+        align-items: center;
+        display: none;
+        .head-servise {
+          width: 95%;
+          height: 10%;
+          display: flex;
+          align-items: center;
+          justify-self: center;
+          flex-flow: row nowrap;
+          border-bottom: 1px solid #e2e2e2;
+          > label {
+            > svg {
+              cursor: pointer;
+            }
+          }
+          .head-servise-1 {
+            width: 99%;
+            height: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            > p {
+              font-family: iranyekan;
+              font-size: 15px;
+              font-weight: bold;
+              margin-right: 10px;
+            }
+
+            > svg.svg-hds {
+              width: 24px;
+              height: 24px;
+              fill: #ef4065;
+            }
+          }
+        }
+        .caption-service {
+          width: 100%;
+          height: 90%;
+          overflow: auto;
+          display: flex;
+          flex-flow: column nowrap;
+          align-items: center;
+          .caption-service-1 {
+            width: 90%;
+            height: 50%;
+            > ul {
+              display: flex;
+              flex-flow: row wrap;
+              align-items: start;
+              justify-content: start;
+              gap: 60px;
+              > li {
+                cursor: pointer;
+                > img {
+                  width: 50px;
+                  height: 50px;
+                }
+                > p {
+                  font-family: iranyekan;
+                  font-size: 11px;
+                  text-align: center;
+                  margin-top: 7px;
+                }
+              }
+            }
+          }
+          .caption-service-2 {
+            width: 95%;
+            height: 10%;
+            display: flex;
+            align-items: end;
+            > p {
+              font-size: 15px;
+              font-family: iranyekan;
+              width: 100%;
+              color: #686868;
+            }
+          }
+          .caption-service-3 {
+            width: 90%;
+            height: 40%;
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 10px;
+            > ul {
+              display: flex;
+              flex-flow: column nowrap;
+              align-items: start;
+              justify-content: start;
+              width: 50%;
+              gap: unset;
+              > li {
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                width: 100%;
+                min-height: 80px;
+                padding-right: 10px;
+                box-sizing: border-box;
+                border-radius: 15px;
+                border: 1px solid #e2e2e2;
+                cursor: pointer;
+
+                > img {
+                  width: 50px;
+                  height: 50px;
+                }
+                > p {
+                  font-family: iranyekan;
+                  font-size: 13px;
+                  display: flex;
+                  justify-self: center;
+                  padding-right: 10px;
+                  box-sizing: border-box;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

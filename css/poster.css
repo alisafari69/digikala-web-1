@@ -1,0 +1,122 @@
+.poster {
+  width: 85%;
+  height: 640px;
+  margin: 15px auto;
+  /* background-color: red; */
+  > ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+    gap: 15px;
+    > li {
+      width: calc(100% / 4);
+      img {
+        width: 100%;
+        height: 240px;
+        border-radius: 17px;
+        cursor: pointer;
+        object-fit: cover;
+      }
+    }
+  }
+  > .middle-poster {
+    width: 100%;
+    height: 110px;
+    background-image: url("../image/index-image/poster-image/middle-poster/background.svg");
+    background-color: #eceeee;
+    background-repeat: no-repeat;
+    margin: 15px 0 15px 0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    > .middle-poster-1 {
+      width: 48%;
+      height: 100%;
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      > img {
+        padding-right: 15px;
+        box-sizing: border-box;
+      }
+      > p {
+        font-family: iranyekan;
+        padding: 5px 15px;
+        background-color: green;
+        font-size: 13px;
+        font-weight: bold;
+        color: white;
+        margin-right: 15px;
+        border-radius: 50px;
+      }
+    }
+    > .middle-poster-2 {
+      width: 52%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      > ul {
+        list-style-type: none;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 10px;
+        > li {
+          width: 70px;
+          height: 70px;
+          background-color: #fff;
+          border-radius: 50px;
+          padding: 7px;
+          box-sizing: border-box;
+          display: flex;
+          flex-flow: column;
+          position: relative;
+          > img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50px;
+          }
+          > p {
+            font-size: 13px;
+            font-weight: bold;
+            color: white;
+            padding: 2px 5px;
+            background-color: crimson;
+            border-radius: 50px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+          }
+          &.more-poster {
+            width: 140px;
+            height: 46px;
+            background-color: #fff;
+            display: flex;
+            align-self: center;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-flow: row nowrap;
+            > p {
+              all: unset;
+              color: green;
+              font-family: iranyekan;
+              font-size: 12px;
+            }
+            > svg {
+              color: green;
+            }
+          }
+        }
+      }
+    }
+  }
+}

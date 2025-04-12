@@ -1,0 +1,109 @@
+div.login {
+  width: 400px;
+  height: 480px;
+  /* background: silver; */
+  display: flex;
+  flex-direction: column;
+  margin: 134px auto;
+  box-shadow: 0 0 3px var(--shadow-color);
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: var(--padding);
+  .login-icon {
+    width: 29%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+  .login-name {
+    font-family: iranyekan;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    text-shadow: none;
+    font-size: 19px;
+    gap: 10px;
+    box-sizing: border-box;
+    .name-1 {
+      border-left: 2px solid black;
+      box-sizing: border-box;
+      padding-left: 8px;
+      height: 22px;
+    }
+  }
+  .login-caption {
+    font-family: iranyekan;
+    padding-top: var(--padding-top);
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #585858;
+    p.p2 {
+      padding-top: 10px;
+      box-sizing: border-box;
+    }
+  }
+  .login-form {
+    padding-top: var(--padding-top);
+    .login-input-1 {
+      width: 334px;
+      height: 47px;
+      border-radius: 10px;
+      border: 1px solid #00cccc;
+      padding-right: 15px;
+      font-size: 15px;
+      color: #585858;
+      padding-bottom: 7px;
+      box-sizing: border-box;
+      &:focus {
+        outline: none;
+        border: 1px solid black;
+        box-sizing: border-box;
+      }
+      &:invalid {
+        border: 1px solid crimson;
+      }
+      &:valid {
+        border: 1px solid #00cccc;
+      }
+      &:invalid + .input-valid {
+        opacity: 1;
+      }
+    }
+    .input-valid {
+      color: #b2001a;
+      font-family: iranyekan;
+      font-size: 13px;
+      padding: 5px 2px 0 0;
+      box-sizing: border-box;
+      transition: 300ms;
+      opacity: 0;
+    }
+  }
+  .login-btn-1 {
+    width: 334px;
+    height: 49px;
+    background-color: var(--color-top);
+    margin-top: 33px;
+    border-radius: 9px;
+    border: none;
+    color: white;
+    font-family: iranyekan;
+    font-weight: bold;
+    text-shadow: none;
+    cursor: pointer;
+  }
+  .login-footer {
+    p {
+      font-family: iranyekan;
+      font-size: 11px;
+      color: #585858;
+      padding-top: var(--padding-top);
+      a {
+        text-decoration: none;
+        color: #008eb5;
+      }
+    }
+  }
+}
